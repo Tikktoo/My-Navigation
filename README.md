@@ -38,9 +38,6 @@ localStorage.setItem(key,value)  //将value存储到key字段
 localStorage.removeItem(key)  //删除指定key本地存储的值
 ```
 
-<p>什么是locationStorage，可以看我的这篇文章：</p>
-
-<a href="https://zhuanlan.zhihu.com/p/37171920">关于Cookie、Session、LocalStorage、Cache-Control</a>
 
 <h3>2、关于JSON</h3>
 
