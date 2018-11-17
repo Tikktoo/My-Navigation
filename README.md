@@ -1,16 +1,11 @@
 <h1>如何用JS做一个自己的导航？</h1>
 
-<img src="https://i.loli.net/2018/05/27/5b098570a7ce3.png" alt="图" title="导航图" />
 
 <p><strong>关键词：</strong>原生JavaScript、locationStorage、JSON、favicon、onerror、图床、CSS Gradient Generator</p> 
 
 <p><strong>描述：</strong>该项目使用原生JS实现一个键盘导航，该导航支持百度、谷歌搜索，键盘字母绑定自定义的网站。用favicon实现了获取网站logo的url功能，用CSS Gradient Generator 实现了键盘颜色的渐变，用locationStorage实现了用户输入url保存到本地的功能。</p> 
 
 <p>源码链接：就是本网页</p>
-
-<p>预览链接：</p>
-
-<a href="https://yuyunzhi.github.io/navigation-demo/index.html">余咖咖的导航</a>
 
 <h2>一、页面分析</h2>
 
@@ -241,7 +236,7 @@ function createImage(domain){
      <li>当鼠标点击body的时候，判断点击的元素是input，还是kbd，还是其他</li>
      <li>当为input时，那么取消onkeypress的监听</li>
      <li>当为kbd时，获取kbd元素的className所对应的website，并打开跳转该网址</li>
-     <li>其余情况对键盘进行监听，获取键盘所对应的website，并打开跳转该网址</li>
+     <li>其情况对键盘进行监听，获取键盘所对应的website，并打开跳转该网址</li>
  </ul>
 
  <p>这里的 isWebsite()是为了解决一个bug,如果用户打开button什么也不输入直接点确定，那么hash存的值为undefined或null就均不跳转。</p>
